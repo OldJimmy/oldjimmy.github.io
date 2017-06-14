@@ -1,1 +1,32 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+<style>
+input {
+  display: block;
+    margin: 0;
+      width: 100%;
+        font-family: sans-serif;
+	  font-size: 18px;
+	    appearance: none;
+	      box-shadow: none;
+	        border-radius: none;
+		  background-color: #ccc;
+		  }
+		  </style>
+		  <script>
+		  $(document).ready(function(){
+		      new Clipboard('#copy-button');
+		      });
+		      </script>
+		      </head>
+		      <body>
+
+		      <input id="post-shortlink" value="Zu kopieren" readonly/>
+		      <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+
+		      </body>
+		      </html>
+
